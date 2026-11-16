@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #f6f2ea;
+  --card: #fffdf8;
+  --line: #e5ded0;
+  --ink: #1c2230;
+  --muted: #6a6f7a;
+  --primary: #0f766e;
+  --primary-soft: #d8eeea;
+  --low: #4f6fa3;
+  --medium: #b7791f;
+  --high: #c2410c;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-card: var(--card);
+  --color-line: var(--line);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-primary: var(--primary);
+  --color-primary-soft: var(--primary-soft);
+  --color-low: var(--low);
+  --color-medium: var(--medium);
+  --color-high: var(--high);
+  --font-sans: var(--font-geist-sans);
+  --font-serif: var(--font-fraunces);
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+dialog::backdrop {
+  background: rgb(28 34 48 / 0.45);
+  backdrop-filter: blur(2px);
+}
